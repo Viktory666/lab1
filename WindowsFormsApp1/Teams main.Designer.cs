@@ -42,13 +42,12 @@
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
+            this.rn1 = new System.Windows.Forms.Label();
+            this.rn2 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.rn3 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -82,7 +81,7 @@
             this.label29 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.tab1 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.label32 = new System.Windows.Forms.Label();
@@ -281,25 +280,26 @@
             this.pictureBox13.TabIndex = 210;
             this.pictureBox13.TabStop = false;
             // 
-            // label30
+            // rn1
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label30.Location = new System.Drawing.Point(72, 244);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(80, 15);
-            this.label30.TabIndex = 208;
-            this.label30.Text = "Teams name";
+            this.rn1.AutoSize = true;
+            this.rn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rn1.Location = new System.Drawing.Point(72, 134);
+            this.rn1.Name = "rn1";
+            this.rn1.Size = new System.Drawing.Size(80, 15);
+            this.rn1.TabIndex = 208;
+            this.rn1.Text = "Teams name";
             // 
-            // label31
+            // rn2
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label31.Location = new System.Drawing.Point(72, 190);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(80, 15);
-            this.label31.TabIndex = 207;
-            this.label31.Text = "Teams name";
+            this.rn2.AutoSize = true;
+            this.rn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rn2.Location = new System.Drawing.Point(72, 190);
+            this.rn2.Name = "rn2";
+            this.rn2.Size = new System.Drawing.Size(80, 15);
+            this.rn2.TabIndex = 207;
+            this.rn2.Text = "Teams name";
+            this.rn2.Click += new System.EventHandler(this.label31_Click);
             // 
             // textBox12
             // 
@@ -331,25 +331,16 @@
             this.label34.TabIndex = 203;
             this.label34.Text = "Teams name";
             // 
-            // label35
+            // rn3
             // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label35.Location = new System.Drawing.Point(72, 134);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(80, 15);
-            this.label35.TabIndex = 202;
-            this.label35.Text = "Teams name";
-            this.label35.Click += new System.EventHandler(this.label35_Click);
-            // 
-            // textBox13
-            // 
-            this.textBox13.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox13.Location = new System.Drawing.Point(13, 133);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(254, 54);
-            this.textBox13.TabIndex = 201;
+            this.rn3.AutoSize = true;
+            this.rn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rn3.Location = new System.Drawing.Point(72, 244);
+            this.rn3.Name = "rn3";
+            this.rn3.Size = new System.Drawing.Size(80, 15);
+            this.rn3.TabIndex = 202;
+            this.rn3.Text = "Teams name";
+            this.rn3.Click += new System.EventHandler(this.label35_Click);
             // 
             // textBox15
             // 
@@ -680,14 +671,14 @@
             this.textBox1.Size = new System.Drawing.Size(254, 54);
             this.textBox1.TabIndex = 169;
             // 
-            // textBox16
+            // tab1
             // 
-            this.textBox16.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox16.Location = new System.Drawing.Point(10, 103);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(781, 309);
-            this.textBox16.TabIndex = 225;
+            this.tab1.BackColor = System.Drawing.SystemColors.Menu;
+            this.tab1.Location = new System.Drawing.Point(10, 103);
+            this.tab1.Multiline = true;
+            this.tab1.Name = "tab1";
+            this.tab1.Size = new System.Drawing.Size(781, 309);
+            this.tab1.TabIndex = 225;
             // 
             // label13
             // 
@@ -1168,6 +1159,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.rn3);
             this.Controls.Add(this.label66);
             this.Controls.Add(this.label65);
             this.Controls.Add(this.label64);
@@ -1231,13 +1223,11 @@
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.label30);
-            this.Controls.Add(this.label31);
+            this.Controls.Add(this.rn1);
+            this.Controls.Add(this.rn2);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.label34);
-            this.Controls.Add(this.label35);
-            this.Controls.Add(this.textBox13);
             this.Controls.Add(this.textBox15);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label14);
@@ -1271,7 +1261,7 @@
             this.Controls.Add(this.label29);
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.tab1);
             this.Name = "Teams_main";
             this.Text = "Teams_main";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -1310,13 +1300,12 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label rn1;
+        private System.Windows.Forms.Label rn2;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label rn3;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label14;
@@ -1350,7 +1339,7 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox tab1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.Label label32;

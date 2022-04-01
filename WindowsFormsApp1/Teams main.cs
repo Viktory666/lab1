@@ -15,44 +15,37 @@ namespace WindowsFormsApp1
         Team[] teams = new Team[5];
         public Teams_main()
         {
-            InitializeComponent();
-            InitializeComponent();
+
+
+
+
             Team team = new Team();
-            team.setTeamId(1);
-            team.setName("Miami Heat");
-            team.setAbbr("MIA");
-            team.setLogo("1.jpg");
+
+            team.setAll(1, "Miami Heat", "MIA", "1.jpg");
             teams[0] = team;
-
-            team.setTeamId(2);
-            team.setName("Orlando Magic");
-            team.setAbbr("ORL");
-            team.setLogo("2.jpg");
+            team.setAll(2, "Orlando Magic", "ORL", "2.jpg");
             teams[1] = team;
-
-            team.setTeamId(3);
-            team.setName("Atlanta Hawks");
-            team.setAbbr("ATL");
-            team.setLogo("3.jpg");
+            team.setAll(3, "Atlanta Hawks", "ATL", "3.jpg");
             teams[2] = team;
-
-            team.setTeamId(4);
-            team.setName("Washington Wizards");
-            team.setAbbr("WSH");
-            team.setLogo("4.jpg");
+            team.setAll(4, "Washington Wizards", "WSH", "4.jpg");
             teams[3] = team;
-
-            team.setTeamId(5);
-            team.setName("Charlotte Hornets");
-            team.setAbbr("CHA");
-            team.setLogo("5.jpg");
+            team.setAll(5, "Charlotte Hornets", "CHA", "5.jpg");
             teams[4] = team;
+
+                      
+
+            
+            InitializeComponent();
+
+           // for (int i = 0; i < 5; i++) ;
+          Controls["rn1"].Text = teams[0].name;
+           
         }
 
         private void label35_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 5; i++)
-                this.Controls["label" + i].Text = teams[i].name;
+           
+                
         }
 
         private void label33_Click(object sender, EventArgs e)
@@ -165,6 +158,11 @@ namespace WindowsFormsApp1
         {
             Form adminForm = new Visitor_Menu();
             adminForm.Show();
+        }
+
+        private void label31_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

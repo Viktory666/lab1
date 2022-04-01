@@ -8,14 +8,14 @@ namespace WindowsFormsApp1
 {
     internal class Player
     {
-        String playerId;
+        int playerId;
         String lastNam;
         String firstName;
         String height;
         String weight;
         String countryCode;
 
-        public void setAll(String playerId, String lastNam, String firstName, String height, String weight, String countryCode)
+        public void setAll(int playerId, String lastNam, String firstName, String height, String weight, String countryCode)
         {
             this.playerId = playerId;
             this.lastNam = lastNam;
