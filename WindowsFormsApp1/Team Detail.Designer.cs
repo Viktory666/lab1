@@ -127,6 +127,7 @@
             this.label36.TabIndex = 303;
             this.label36.Text = "Team Detail";
             this.label36.UseMnemonic = false;
+            this.label36.Click += new System.EventHandler(this.label36_Click);
             // 
             // label32
             // 
@@ -280,7 +281,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.60592F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.60592F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.60592F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(776, 253);
             this.tableLayoutPanel1.TabIndex = 406;
             // 
@@ -301,7 +301,7 @@
             this.button14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button14.Location = new System.Drawing.Point(76, 219);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(73, 31);
+            this.button14.Size = new System.Drawing.Size(133, 31);
             this.button14.TabIndex = 49;
             this.button14.Text = "...........";
             this.button14.UseVisualStyleBackColor = true;
@@ -323,7 +323,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Location = new System.Drawing.Point(294, 219);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(67, 31);
+            this.button1.Size = new System.Drawing.Size(95, 31);
             this.button1.TabIndex = 46;
             this.button1.Text = "...........";
             this.button1.UseVisualStyleBackColor = true;
@@ -847,6 +847,7 @@
             this.button55.TabIndex = 411;
             this.button55.Text = "Roster";
             this.button55.UseVisualStyleBackColor = false;
+            this.button55.Click += new System.EventHandler(this.button55_Click);
             // 
             // Team_Detail
             // 
@@ -868,6 +869,7 @@
             this.Controls.Add(this.button55);
             this.Name = "Team_Detail";
             this.Text = "Team_Detail";
+            this.Load += new System.EventHandler(this.Team_Detail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

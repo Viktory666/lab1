@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class Teams_main : Form
     {
-        Team[] teams = new Team[5];
+        internal static Team[] teams = new Team[5];
 
         //imgList
         String[] imgList = new String[]
@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
 
 
 
-
+ 
             teams[0] = new Team();
             teams[0].setAll(1, "Miami Heat", "MIA", "1.jpg");
 
@@ -56,7 +56,7 @@ namespace WindowsFormsApp1
             Logo4.Load("../../../Teams/" + imgList[3]); Logo5.Load("../../../Teams/" + imgList[4]); Logo6.Load("../../../Teams/" + imgList[5]);
             Logo7.Load("../../../Teams/" + imgList[6]); Logo8.Load("../../../Teams/" + imgList[7]); Logo9.Load("../../../Teams/" + imgList[8]);
             Logo10.Load("../../../Teams/" + imgList[9]); Logo11.Load("../../../Teams/" + imgList[10]); Logo12.Load("../../../Teams/" + imgList[11]);
-            Logo13.Load("../../../Teams/" + imgList[12]); Logo14.Load("../../../Teams/" + imgList[13]); Logo14.Load("../../../Teams/" + imgList[14]);
+            Logo13.Load("../../../Teams/" + imgList[12]); Logo14.Load("../../../Teams/" + imgList[13]); Logo15.Load("../../../Teams/" + imgList[14]);
 
 
         }
@@ -187,7 +187,10 @@ namespace WindowsFormsApp1
 
         private void rn1_Click(object sender, EventArgs e)
         {
-
+            Team_Detail.teamId = 5;
+            Form adminForm = new Team_Detail();
+            adminForm.Show();
+            
         }
 
         private void label37_Click(object sender, EventArgs e)

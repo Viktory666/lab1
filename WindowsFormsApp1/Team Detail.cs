@@ -12,8 +12,13 @@ namespace WindowsFormsApp1
 {
     public partial class Team_Detail : Form
     {
+        public static int teamId;
+        Team team = new Team();
+         
         public Team_Detail()
         {
+            
+            
             InitializeComponent();
         }
 
@@ -39,6 +44,25 @@ namespace WindowsFormsApp1
 
             Form adminForm = new Team_Detail_3();
             adminForm.Show();
+        }
+
+        private void button55_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Team_Detail_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 5; i++)
+                if (teamId == Teams_main.teams[i].teamId)                    
+            this.team = Teams_main.teams[i];
+            
+
+        }
+
+        private void label36_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
