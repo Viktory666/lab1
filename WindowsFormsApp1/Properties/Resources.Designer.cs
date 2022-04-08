@@ -63,6 +63,16 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1623233856_13_phonoteka_org_p_basketbolnoe_pole_tekstura_krasivo_17 {
+            get {
+                object obj = ResourceManager.GetObject("1623233856_13-phonoteka_org-p-basketbolnoe-pole-tekstura-krasivo-17", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rheu {
             get {
                 object obj = ResourceManager.GetObject("rheu", resourceCulture);

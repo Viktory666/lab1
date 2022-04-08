@@ -13,33 +13,52 @@ namespace WindowsFormsApp1
     public partial class Teams_main : Form
     {
         Team[] teams = new Team[5];
+
+        //imgList
+        String[] imgList = new String[]
+            {"1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg"};
         public Teams_main()
         {
 
 
 
 
-            Team team = new Team();
+            teams[0] = new Team();
+            teams[0].setAll(1, "Miami Heat", "MIA", "1.jpg");
 
-            team.setAll(1, "Miami Heat", "MIA", "1.jpg");
-            teams[0] = team;
-            team.setAll(2, "Orlando Magic", "ORL", "2.jpg");
-            teams[1] = team;
-            team.setAll(3, "Atlanta Hawks", "ATL", "3.jpg");
-            teams[2] = team;
-            team.setAll(4, "Washington Wizards", "WSH", "4.jpg");
-            teams[3] = team;
-            team.setAll(5, "Charlotte Hornets", "CHA", "5.jpg");
-            teams[4] = team;
+            teams[1] = new Team();
+            teams[1].setAll(2, "Orlando Magic", "ORL", "2.jpg");
 
-                      
+            teams[2] = new Team();
+            teams[2].setAll(3, "Atlanta Hawks", "ATL", "3.jpg");
 
-            
+            teams[3] = new Team();
+            teams[3].setAll(4, "Washington Wizards", "WSH", "4.jpg");
+
+            teams[4] = new Team();
+            teams[4].setAll(5, "Charlotte Hornets", "CHA", "5.jpg");
+
+
+
+
             InitializeComponent();
 
-           // for (int i = 0; i < 5; i++) ;
-          Controls["rn1"].Text = teams[0].name;
-           
+            for (int i = 0; i < 5; i++)
+                Controls["rn" + (i + 1)].Text = teams[i].name;
+
+            for (int i = 0; i < 5; i++)
+                Controls["t" + (i + 1)].Text = teams[i].name;
+
+            for (int i = 0; i < 5; i++)
+                Controls["w" + (i + 1)].Text = teams[i].name;
+
+            Logo1.Load("../../../Teams/" + imgList[0]); Logo2.Load("../../../Teams/" + imgList[1]); Logo3.Load("../../../Teams/" + imgList[2]);
+            Logo4.Load("../../../Teams/" + imgList[3]); Logo5.Load("../../../Teams/" + imgList[4]); Logo6.Load("../../../Teams/" + imgList[5]);
+            Logo7.Load("../../../Teams/" + imgList[6]); Logo8.Load("../../../Teams/" + imgList[7]); Logo9.Load("../../../Teams/" + imgList[8]);
+            Logo10.Load("../../../Teams/" + imgList[9]); Logo11.Load("../../../Teams/" + imgList[10]); Logo12.Load("../../../Teams/" + imgList[11]);
+            Logo13.Load("../../../Teams/" + imgList[12]); Logo14.Load("../../../Teams/" + imgList[13]); Logo14.Load("../../../Teams/" + imgList[14]);
+
+
         }
 
         private void label35_Click(object sender, EventArgs e)
@@ -55,7 +74,8 @@ namespace WindowsFormsApp1
 
         private void label38_Click(object sender, EventArgs e)
         {
-
+            Form adminForm = new Team_Detail_3();
+            adminForm.Show();
         }
 
         private void label33_Click_1(object sender, EventArgs e)
@@ -163,6 +183,191 @@ namespace WindowsFormsApp1
         private void label31_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void rn1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label37_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_2();
+            adminForm.Show();
+        }
+
+        private void label41_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_2();
+            adminForm.Show();
+        }
+
+        private void label44_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_2();
+            adminForm.Show();
+        }
+
+        private void label47_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_2();
+            adminForm.Show();
+        }
+
+        private void label50_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_2();
+            adminForm.Show();
+        }
+
+        private void label39_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_2();
+            adminForm.Show();
+        }
+
+        private void label42_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_2();
+            adminForm.Show();
+        }
+
+        private void label45_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_2();
+            adminForm.Show();
+        }
+
+        private void label48_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_2();
+            adminForm.Show();
+        }
+
+        private void label51_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_2();
+            adminForm.Show();
+        }
+
+        private void label40_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_2();
+            adminForm.Show();
+        }
+
+        private void label43_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_2();
+            adminForm.Show();
+        }
+
+        private void label46_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_2();
+            adminForm.Show();
+        }
+
+        private void label49_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_2();
+            adminForm.Show();
+        }
+
+        private void label52_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_2();
+            adminForm.Show();
+        }
+
+        private void label53_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_3();
+            adminForm.Show();
+        }
+
+        private void label56_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_3();
+            adminForm.Show();
+        }
+
+        private void label61_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_3();
+            adminForm.Show();
+        }
+
+        private void label64_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_3();
+            adminForm.Show();
+        }
+
+        private void label54_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_3();
+            adminForm.Show();
+        }
+
+        private void label57_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_3();
+            adminForm.Show();
+        }
+
+        private void label58_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_3();
+            adminForm.Show();
+        }
+
+        private void label62_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_3();
+            adminForm.Show();
+        }
+
+        private void label65_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_3();
+            adminForm.Show();
+        }
+        
+
+        private void label55_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_3();
+            adminForm.Show();
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label59_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_3();
+            adminForm.Show();
+        }
+
+        private void label60_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_3();
+            adminForm.Show();
+        }
+
+        private void label63_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_3();
+            adminForm.Show();
+        }
+
+        private void label66_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_3();
+            adminForm.Show();
         }
     }
 }

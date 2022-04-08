@@ -22,5 +22,23 @@ namespace WindowsFormsApp1
             Form adminForm = new Teams_main();
             adminForm.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button54_Click(object sender, EventArgs e)
+        {
+            Form adminForm = new Team_Detail_2();
+            adminForm.Show();
+        }
+
+        private void button53_Click(object sender, EventArgs e)
+        {
+
+            Form adminForm = new Team_Detail_3();
+            adminForm.Show();
+        }
     }
 }

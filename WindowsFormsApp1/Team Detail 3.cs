@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Team_Detail_2 : Form
+    public partial class Team_Detail_3 : Form
     {
-        public Team_Detail_2()
+        public Team_Detail_3()
         {
             InitializeComponent();
         }
 
-        private void button27_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Form adminForm = new Team_Detail();
             adminForm.Show();
         }
 
-        private void button29_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            Form adminForm = new Team_Detail_3();
+            Form adminForm = new Team_Detail_2();
             adminForm.Show();
         }
 
