@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    internal partial class Form1 : Form
 
     {
         //ImgList
@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
 
         Country[] countries = new Country[5];
         POSITIONNAME[] pOSITIONNAMEs = new POSITIONNAME[5];
-        Player[] players = new Player[5];
+        public static Player[] players = new Player[5];
         Positionofplayer[] positionofplayers = new Positionofplayer[5];
         public Form1()
         {

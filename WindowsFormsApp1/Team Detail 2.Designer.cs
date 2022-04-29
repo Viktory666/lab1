@@ -889,6 +889,7 @@
             this.label1.Size = new System.Drawing.Size(371, 20);
             this.label1.TabIndex = 411;
             this.label1.Text = "Team Name  I   Division Name of Conferense Name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label32
             // 

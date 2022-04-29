@@ -12,7 +12,8 @@ namespace WindowsFormsApp1
 {
     public partial class Team_Detail : Form
     {
-        public static int teamId;
+        public  int teamId;
+        public int playerId;
         Team team = new Team();
          
         public Team_Detail()
@@ -57,12 +58,28 @@ namespace WindowsFormsApp1
                 if (teamId == Teams_main.teams[i].teamId)                    
             this.team = Teams_main.teams[i];
             
+            this.label36.Text = team.name;
+
+            for (int i = 0; i < Form1.players.Length; i++)
+                if (Teams_main.teams[i].teamId == this.teamId)
+                    dataGridView1.Rows.Add(Form1.players[i].playerId, Form1.players[i].firstName, Form1.players[i].lastNam, Form1.players[i].height, Form1.players[i].weight, Form1.players[i].countryCode);
 
         }
 
         private void label36_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void label32_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+           
+        
         }
     }
 }

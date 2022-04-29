@@ -187,10 +187,9 @@ namespace WindowsFormsApp1
 
         private void rn1_Click(object sender, EventArgs e)
         {
-            Team_Detail.teamId = 5;
-            Form adminForm = new Team_Detail();
-            adminForm.Show();
-            
+           Team_Detail team = new Team_Detail();
+            team.teamId = 1;
+            team.Show();
         }
 
         private void label37_Click(object sender, EventArgs e)
