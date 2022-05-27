@@ -55,19 +55,19 @@ namespace WindowsFormsApp1
             positionofplayers[4] = positionofplayer;
 
             Player player = new Player();
-            player.setAll(1, "Mo", "Williams", "1.85", "89.8", "US");
+            player.setAll(1, 1, "Mo", "Williams", "1.85", "89.8", "US");
             players[0] = player;
 
-            player.setAll(2, "Alonzo", "Edward Gee", "1.98", "99", "US");
+            player.setAll(1, 2, "Alonzo", "Edward Gee", "1.98", "99", "US");
             players[1] = player;
 
-            player.setAll(3, "Johnny", "O'Bryant", "2.05", "116.5", "US");
+            player.setAll(1, 3, "Johnny", "O'Bryant", "2.05", "116.5", "US");
             players[2] = player;
 
-            player.setAll(4, "Danilo", "Gallinari", "2.08", "102", "US");
+            player.setAll(1, 4, "Danilo", "Gallinari", "2.08", "102", "US");
             players[3] = player;
 
-            player.setAll(5, "Darrell", "Arthur", "2.06", "107", "US");
+            player.setAll(1, 5, "Darrell", "Arthur", "2.06", "107", "US");
             players[4] = player;
 
             POSITIONNAME pOSITIONNAME = new POSITIONNAME();

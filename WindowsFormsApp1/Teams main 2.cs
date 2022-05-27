@@ -20,19 +20,19 @@ namespace WindowsFormsApp1
         public Teams_Main__2_()
         {
             teams[0] = new Team();
-            teams[0].setAll(1, "Miami Heat", "MIA", "1.jpg");
+            teams[0].setAll(1, 1, "Miami Heat", "MIA", "1.jpg");
 
             teams[1] = new Team();
-            teams[1].setAll(2, "Orlando Magic", "ORL", "2.jpg");
+            teams[1].setAll(1, 2, "Orlando Magic", "ORL", "2.jpg");
 
             teams[2] = new Team();
-            teams[2].setAll(3, "Atlanta Hawks", "ATL", "3.jpg");
+            teams[2].setAll(1, 3, "Atlanta Hawks", "ATL", "3.jpg");
 
             teams[3] = new Team();
-            teams[3].setAll(4, "Washington Wizards", "WSH", "4.jpg");
+            teams[3].setAll(1, 4, "Washington Wizards", "WSH", "4.jpg");
 
             teams[4] = new Team();
-            teams[4].setAll(5, "Charlotte Hornets", "CHA", "5.jpg");
+            teams[4].setAll(1, 5, "Charlotte Hornets", "CHA", "5.jpg");
 
             InitializeComponent();
 

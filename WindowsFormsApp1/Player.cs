@@ -8,6 +8,7 @@ namespace WindowsFormsApp1
 {
     internal class Player
     {
+        public int Id;
         public int playerId;
         public String lastNam;
         public String firstName;
@@ -15,8 +16,9 @@ namespace WindowsFormsApp1
         public String weight;
         public String countryCode;
 
-        public void setAll(int playerId, String lastNam, String firstName, String height, String weight, String countryCode)
+        public void setAll(int Id, int playerId, String lastNam, String firstName, String height, String weight, String countryCode)
         {
+            this.Id = Id;
             this.playerId = playerId;
             this.lastNam = lastNam;
             this.firstName = firstName;
